@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>RAJ EDITZ | Free Fire Gaming</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap" rel="stylesheet"> -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= LOADING SCREEN ================= -->
+  <div id="loader">
+    <h1>RAJ EDITZ</h1>
+  </div>
+
+
+  <!-- ================= BACKGROUND ================= -->
+  <div class="bg-animation">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+
+    <div class="logo-box">
+      <img src="assets/logo.jpeg" class="logo" alt="RAJ EDITZ Logo">
+
+      <h1>RAJ EDITZ</h1>
+    </div>
+
+    <button id="themeBtn">🌙</button>
+
+  </header>
+
+
+  <!-- ================= BANNER SLIDER ================= -->
+  <section class="banner-slider">
+
+    <div class="slides">
+
+      <img
+        src="assets/banner.jpeg"
+        class="slide active"
+        alt="RAJ EDITZ Banner">
+
+      <!-- Agar ye images assets folder me hain to uncomment karo -->
+      
+      <img
+        src="assets/banner1.jpeg"
+        class="slide"
+        alt="RAJ EDITZ Banner 2">
+
+      <!-- <img -->
+        src="assets/banner3.jpeg"
+        class="slide"
+        alt="RAJ EDITZ Banner 3">
+      
+
+    </div>
+
+    <button class="slider-btn prev" onclick="changeSlide(-1)">
+      ❮
+    </button>
+
+    <button class="slider-btn next" onclick="changeSlide(1)">
+      ❯
+    </button>
+
+    <div class="slider-dots">
+
+      <span
+        class="dot active"
+        onclick="goToSlide(0)">
+      </span>
+
+      <!-- Agar extra banners add karo to ye dots bhi add karna -->
+      <!--
+      <span class="dot" onclick="goToSlide(1)"></span>
+      <span class="dot" onclick="goToSlide(2)"></span>
+      -->
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+
+    <div class="hero-text">
+
+      <h2>WELCOME TO RAJ EDITZ</h2>
+
+      <p>
+        Free Fire Gaming • Editing • Downloads • More
+      </p>
+
+      <a
+  href="https://youtu.be/TmKNu_N-fpA"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="watch-btn">
+  ▶ Watch Now
+</a>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= SOCIAL SECTION ================= -->
+ <section class="social-section">
+
+  <a
+    href="https://youtube.com/@rajxverseofficial"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="social-card">
+
+    <img src="assets/youtube.jpeg" alt="YouTube">
+    <span>YouTube</span>
+
+  </a>
+
+
+  <a
+    href="https://www.instagram.com/raj_ffx_/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="social-card">
+
+    <img src="assets/instagram.jpeg" alt="Instagram">
+    <span>Instagram</span>
+
+  </a>
+
+
+  <a
+    href="https://www.facebook.com/share/1BwoFa5y6B/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="social-card">
+
+    <img src="assets/facebook.jpeg" alt="Facebook">
+    <span>Facebook</span>
+
+  </a>
+
+</section>
+
+
+  <!-- ================= LATEST VIDEO ================= -->
+  <section class="latest-video">
+
+    <h2>🔥 Latest Video</h2>
+
+    <div class="video-frame">
+
+  <iframe
+      src="https://www.youtube.com/embed/TmKNu_N-fpA"
+     title="RAJ EDITZ Latest Video"
+      allowfullscreen>
+</iframe>>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= VIDEO CARD ================= -->
+  <!-- <section class="video-box">
+
+    <div class="video-card">
+
+      <img
+        src="assets/video-thumb.jpg"
+        class="video-thumb"
+        alt="Latest Video">
+
+      <h3>RAJ EDITZ Free Fire Montage</h3>
+
+      <a
+        href="#"
+        class="watch-btn">
+        Watch Video
+      </a>
+
+    </div>
+
+  </section>
+ -->
+
+  <!-- ================= DOWNLOADS ================= -->
+  <section class="downloads" id="downloads-section">
+
+    <h2>🔥 Downloads</h2>
+
+    <div class="download-grid">
+
+      <div class="card">
+        <img src="assets/download1.jpg" alt="Download">
+        <h3>Free Fire Edit</h3>
+        <a href="#" download>Download</a>
+      </div>
+
+      <div class="card">
+        <img src="assets/download2.jpg" alt="Download">
+        <h3>Preset Pack</h3>
+        <a href="#" download>Download</a>
+      </div>
+
+      <div class="card">
+        <img src="assets/download3.jpg" alt="Download">
+        <h3>Thumbnail Pack</h3>
+        <a href="#" download>Download</a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= ABOUT ================= -->
+  <section class="about" id="about">
+
+    <h2>About RAJ EDITZ</h2>
+
+    <p>
+      Welcome to RAJ EDITZ — a gaming and editing website
+      for Free Fire players, creators and editors.
+    </p>
+
+  </section>
+
+
+  <!-- ================= CONTACT ================= -->
+  <!-- <section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <a href="#">📱 WhatsApp</a>
+    <a href="#">📸 Instagram</a>
+    <a href="#">▶ YouTube</a>
+
+  </section>
+
+ -->
+  <!-- ================= CONTACT FORM ================= -->
+  <section class="contact-form">
+
+    <h2>💬 Send Message</h2>
+
+    <form>
+
+      <input
+        type="text"
+        placeholder="Your Name"
+        required>
+
+      <input
+        type="email"
+        placeholder="Your Email"
+        required>
+
+      <textarea
+        rows="5"
+        placeholder="Your Message"
+        required></textarea>
+
+      <button type="button">
+        Send Message
+      </button>
+
+    </form>
+
+  </section>
+
+
+  <div class="social-links">
+  <a href="https://youtube.com/@rajxverseofficial" target="_blank">
+    ▶️ YouTube
+  </a>
+
+  <a href="https://www.instagram.com/raj_ffx_/" target="_blank">
+    📸 Instagram
+  </a>
+
+  <a href="https://www.facebook.com/share/1BwoFa5y6B/" target="_blank">
+    📘 Facebook
+  </a>
+</div>
+
+
+  <!-- ================= UPLOAD / DOWNLOAD HUB ================= -->
+  <section class="upload-center">
+
+    <h2>📂 Upload & Download Hub</h2>
+
+    <div class="upload-grid">
+
+      <div class="upload-card">
+
+        <img
+          src="assets/preset.jpg"
+          alt="Preset">
+
+        <h3>Editing Preset</h3>
+
+        <a href="#" download>
+          Download
+        </a>
+
+      </div>
+
+
+      <div class="upload-card">
+
+        <img
+          src="assets/thumbnail.jpg"
+          alt="Thumbnail">
+
+        <h3>Thumbnail</h3>
+
+        <a href="#" download>
+          Download
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= SEARCH ================= -->
+  <section class="search-section">
+
+    <h2>🔍 Search</h2>
+
+    <input
+      type="text"
+      id="searchBox"
+      placeholder="Search here...">
+
+    <div class="category-box">
+
+      <button type="button">All</button>
+      <button type="button">Videos</button>
+      <button type="button">Presets</button>
+      <button type="button">Thumbnails</button>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= TRENDING ================= -->
+  <section class="trending">
+
+    <h2>🔥 Trending</h2>
+
+    <div class="trend-card">
+
+      <span>Free Fire Montage</span>
+
+      <a href="#">
+        View
+      </a>
+
+    </div>
+
+    <div class="trend-card">
+
+      <span>New Editing Preset</span>
+
+      <a href="#">
+        View
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= GALLERY ================= -->
+  <section class="gallery">
+
+    <h2>🖼️ Gallery</h2>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-card">
+
+        <img
+          src="assets/gallery1.jpg"
+          alt="Gallery">
+
+        <button type="button">
+          View
+        </button>
+
+      </div>
+
+
+      <div class="gallery-card">
+
+        <img
+          src="assets/gallery2.jpg"
+          alt="Gallery">
+
+        <button type="button">
+          View
+        </button>
+
+      </div>
+
+
+      <div class="gallery-card">
+
+        <img
+          src="assets/gallery3.jpg"
+          alt="Gallery">
+
+        <button type="button">
+          View
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= PREMIUM GALLERY ================= -->
+  <section class="premium-gallery">
+
+    <h2>💎 Premium Gallery</h2>
+
+    <div class="gallery-grid">
+
+      <div class="thumb-card">
+
+        <img
+          src="assets/premium1.jpg"
+          alt="Premium">
+
+        <div class="thumb-info">
+
+          <h3>Premium Edit</h3>
+
+          <a href="#" download>
+            Download
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="thumb-card">
+
+        <img
+          src="assets/premium2.jpg"
+          alt="Premium">
+
+        <div class="thumb-info">
+
+          <h3>Premium Thumbnail</h3>
+
+          <a href="#" download>
+            Download
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= DOWNLOAD COUNTER ================= -->
+  <section class="counter">
+
+    <div class="counter-box">
+
+      <h3 id="downloads">0+</h3>
+
+      <p>Total Downloads</p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= MUSIC ================= -->
+  <audio
+    id="bgMusic"
+    loop>
+    <source
+      src="assets/music.mp3"
+      type="audio/mpeg">
+  </audio>
+
+  <button id="musicBtn">
+    🎵 Music
+  </button>
+
+
+  <!-- ================= BACK TO TOP ================= -->
+  <button id="topBtn">
+    ↑
+  </button>
+
+
+  <!-- ================= BOTTOM NAVIGATION ================= -->
+  <!-- <nav class="bottom-nav">
+
+    <a href="#">
+      🏠
+      <span>Home</span>
+    </a>
+,
+    <a href="#downloads-section">
+      📥
+      <span>Downloads</span>
+    </a>
+
+    <a href="#about">
+      ℹ️
+      <span>About</span>
+    </a>
+
+    <a href="#contact">
+      📞
+      <span>Contact</span>
+    </a>
+
+  </nav>
+ -->
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+
+    <p>
+      © 2026 RAJ EDITZ. All Rights Reserved.
+    </p>
+
+  </footer>
+
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
